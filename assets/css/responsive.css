@@ -1,0 +1,146 @@
+@media (max-width: 991px) {
+    :root {
+
+        --parent-box-height: 35px;
+        --parent-box-width: 50px;
+        --parent-box-position-right: 15%;
+        --parent-box-position-top: 3%;
+        --parent-box-position: absolute;
+
+    }
+
+
+    /*-- ========== shift color end ==================== --*/
+
+    #counting_purchase {
+        padding-top: 100px;
+    }
+
+
+    #counting_purchase .container {
+        width: 100%;
+    }
+
+
+    #counting_purchase .parent_row .p_img {
+        width: 100%;
+    }
+
+
+    #counting_purchase .parent_row .c_contains {
+        width: 100%;
+        padding: 30px 15px 0;
+    }
+
+
+    #counting_purchase .c_contains .product_name {
+        text-align: center;
+    }
+
+
+
+    #counting_purchase .c_contains .rating_row {
+        padding: 45px 0 15px;
+    }
+
+
+
+    #counting_purchase .c_contains .price_row {
+        padding: 25px 0 10px;
+    }
+
+
+    /* 
+    #counting_purchase .c_contains .quantity_row {
+        align-items: center;
+        padding: 15px 0 10px;
+        border-bottom: 1px solid #cecece96;
+    } */
+
+    #counting_purchase .c_contains .quantity_row {
+        align-items: first baseline;
+        justify-content: space-between;
+        padding: 30px 0 20px;
+        border-bottom: 1px solid #cecece96;
+    }
+
+
+
+    #counting_purchase .c_contains .quantity_row .count {
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+
+    #counting_purchase .c_contains .quantity_row .count .quantity_count {
+        margin: 0 70px 0 0;
+    }
+
+
+
+    #counting_purchase .c_contains .quantity_row .count p {
+        margin: 10px 0 0 70px;
+    }
+
+
+
+    #counting_purchase .c_contains .order_now {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+
+    /*-- ========== counting purchase ==================== --*/
+
+
+    #qr_sec {
+        height: 100%;
+        width: 100%;
+    }
+
+    #qr_sec .container {
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    #qr_sec .form_row {
+        padding: 80px 0;
+        border-radius: 10px;
+    }
+
+
+    #qr_sec .user_input input {
+        padding: 10px 15px;
+        width: 65%;
+    }
+
+
+    #qr_sec .user_input button {
+        padding: 19px 10px;
+        /* box-shadow: 0 3px 3px 2px #009DB6; */
+        font-size: 12px;
+    }
+
+
+
+    #qr_sec .qr_input::placeholder {
+        font-size: 12px;
+        font-weight: 500;
+        color: #a8a3a4;
+    }
+
+
+
+
+    #qr_sec .image .img_background {
+        width: 45%;
+    }
+
+
+
+    /*-- ========== qr section ==================== --*/
+
+
+}

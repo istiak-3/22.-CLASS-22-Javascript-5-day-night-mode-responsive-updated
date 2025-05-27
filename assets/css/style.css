@@ -1,0 +1,689 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: auto;
+    width: 1256px;
+    background: var(--container-background);
+    transition: var(--default-transition);
+}
+
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    background: var(--section-background);
+    padding: 30px;
+
+    transition: var(--default-transition);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    /* background: var(--section-background); */
+
+    transition: var(--body-transition);
+}
+
+
+
+:root {
+
+
+    --default-transition: background 0.6s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, outline-color 0.6s ease-in-out;
+    --body-transition: background 0.8s ease-in-out, color 0.6s ease-in-out;
+
+    --section-background: #EFF0F5;
+    --container-background: #fff;
+
+
+
+
+    /*-- ========== COLOR SHIFT START ==================== --*/
+
+    --parent-box-height: 45px;
+    --parent-box-width: 70px;
+    --parent-box-position-right: 5%;
+    --parent-box-position-top: 3%;
+    --parent-box-position: fixed;
+
+    --parent-border-radius: 10px;
+    --parent-background-color: #e8e8e834;
+    --parent-overflow: hidden;
+    --parent-box-shadow: 10px 10px 40px 0.1px #b9b9b994;
+
+    --sun-parent-background-image: linear-gradient(to right, #0000001c, #b4b4b42d, #b4b4b42d, #b4b4b42d, #b4b4b42d, #b4b4b42d, #8f8f8f1c, #8f8f8f1c);
+    --sun-parent-transition: all 0.7s ease-in-out;
+
+    --sun-height: 50%;
+    --sun-background-image: linear-gradient(120deg, #ebcd24, #dbc231, #e7cf44, #e7e4d5);
+    --sun-box-shadow: 0 0 4px 4px #fff3b17c, 0 0 8px 8px #fffbe433, 0 0 20px 20px #fffbe42c;
+
+    --sun-replica-background-image: linear-gradient(120deg, #ebcd24, #dbc231, #e7cf44, #e7e4d5);
+    --sun-replica-box-shadow: 0 0 4px 4px #fff3b17c, 0 0 8px 8px #fffbe433, 0 0 20px 20px #fffbe42c;
+    --sun-replica-transition: all 0.7s ease-in-out;
+
+    --cloud-height: 45%;
+    --cloud-box-shadow: inset 0.5px -1px 2.5px 0.001px #58585867;
+    --cloud-background-color: #fff;
+    --cloud-transition: all 0.7s ease-in-out;
+
+    --cloud-replica-height: 45%;
+    --cloud-replica-box-shadow: inset 0.5px -1px 2.5px 0.001px #58585867;
+    --cloud-replica-background-color: #fff;
+    --cloud-replica-transition: all 0.7s ease-in-out;
+
+    --moon-parent-background-color: rgba(0, 0, 0, 0.11);
+    --moon-parent-transition: all 0.7s ease-in-out;
+
+    --moon-height: 50%;
+    --moon-background-image: linear-gradient(120deg, #ffffff, #ebebebd8, #949393b0, #636363);
+    --moon-box-shadow: 0.5px 0.5px 1px 1px #ffffff98;
+
+    --moon-replica-background-image: linear-gradient(120deg, #ffffff, #ebebebd8, #949393b0, #636363);
+    --moon-replica-box-shadow: 0.5px 0.5px 1px 1px #ffffff98;
+    --moon-replica-transition: all 0.7s ease-in-out;
+
+    /*-- ========== COLOR SHIFT END ==================== --*/
+
+
+    /*-- ========== COUNTING PURCHASE START ==================== --*/
+
+    --count-purchase-h4-color: rgb(58, 57, 57);
+    --count-purchase-p-color: #aca8a9dc;
+    --count-purchase-p_in-stock-color: #fff;
+    --count-purchase-p_in-stock-background: #57e2aa;
+    --count-purchase-p_in-stock-outline: transparent;
+    --count-quantity-color: rgb(58, 57, 57);
+    --count-price_color: #44aa81;
+    --count-order-button_color: #fff;
+    --count-order-button_background: #44aa81;
+    --count-order-button_outline: transparent;
+
+    /*-- ========== COUNTING PURCHASE END ==================== --*/
+
+
+
+    /*-- ========== QR SECTION START ==================== --*/
+    --qrsec-form-background: #39BABD;
+    --qrsec-input-background: #fff;
+    --qrsec-button-color: #fff;
+    --qrsec-button-background: #18d687;
+    --qrsec-button_hover-color: #fff;
+    --qrsec-button_hover-background: #18d687d5;
+    --qrsec-image_background: #00ffb37e;
+    --qrsec-image_shadow-background: #009DB6;
+
+    --qr-image-transition: background 0.8s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, outline-color 0.6s ease-in-out;
+
+    --qr-image-refelctor-transition: background 1s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, outline-color 0.6s ease-in-out;
+
+    /*-- ========== QR SECTION END ==================== --*/
+
+}
+
+
+
+body.dark-mode {
+
+    --default-transition: background 0.6s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, outline-color 0.6s ease-in-out;
+
+    --body-transition: background 0s ease-in-out, color 0s ease-in-out;
+
+    --section-background: #1C1C1D;
+    --container-background: #252728;
+
+
+    /*-- ========== COUNTING PURCHASE START ==================== --*/
+
+    --count-purchase-h4-color: #eeeeee;
+    --count-purchase-p-color: #aca8a9dc;
+    --count-purchase-p_in-stock-color: #fff;
+    --count-purchase-p_in-stock-background: #57e2aae0;
+    --count-purchase-p_in-stock-outline: transparent;
+    --count-quantity-color: rgb(231, 228, 228);
+    --count-price_color: #44aa81;
+    --count-order-button_color: #fff;
+    --count-order-button_background: #44aa81;
+    --count-order-button_outline: transparent;
+
+    /*-- ========== COUNTING PURCHASE END ==================== --*/
+
+
+
+    /*-- ========== QR SECTION START ==================== --*/
+
+    --qrsec-form-background: #b239bd;
+    --qrsec-input-background: #fff;
+    --qrsec-button-color: #fff;
+    --qrsec-button-background: #7e17df7e;
+    --qrsec-button_hover-color: #fff;
+    --qrsec-button_hover-background: #18d687d5;
+    --qrsec-image_background: #8400ff7e;
+    --qrsec-image_shadow-background: #9200b6;
+
+    --qr-image-transition: background 0.8s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, outline-color 0.6s ease-in-out;
+
+    --qr-image-refelctor-transition: background 1s ease-in-out, color 0.6s ease-in-out, border-color 0.6s ease-in-out, outline-color 0.6s ease-in-out;
+
+    /*-- ========== QR SECTION END ==================== --*/
+
+}
+
+
+/*-- ========== Common CSS END ==================== --*/
+
+
+
+
+
+
+
+/*-- ========== COLOR-SHIFT START ==================== --*/
+
+.pseudo_part {
+    height: var(--parent-box-height);
+    width: var(--parent-box-width);
+    position: var(--parent-box-position);
+    right: var(--parent-box-position-right);
+    top: var(--parent-box-position-top);
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.pseudo_part::before {
+    content: '';
+    height: 50%;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    background-image: var(--moon-replica-background-image);
+    box-shadow: var(--moon-replica-box-shadow);
+    position: absolute;
+    /* display: flex; */
+    transition: var(--moon-replica-transition);
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.pseudo_part.move_moon::before {
+
+    left: 50%;
+}
+
+
+
+.sun_replica {
+
+    height: var(--sun-height);
+    aspect-ratio: 1;
+    border-radius: 100px;
+    background-image: var(--sun-replica-background-image);
+    box-shadow: var(--sun-replica-box-shadow);
+    position: absolute;
+    /* display: flex; */
+    transition: var(--sun-replica-transition);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.sun_replica.move_sun {
+    left: 150%;
+}
+
+
+
+.cloud_1 {
+    height: var(--cloud-replica-height);
+    /* control the size */
+    aspect-ratio: 1.8;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%, var(--g) 70% 0/50% 100%, var(--g) 0 100%/36% 68%, var(--g) 27% 18%/26% 40%, linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: var(--cloud-replica-background-color);
+    box-shadow: var(--cloud-replica-box-shadow);
+    position: absolute;
+    left: 70%;
+    top: 55%;
+    transform: translate(0%, -50%);
+    transition: var(--cloud-replica-transition);
+}
+
+
+.cloud_1.move_cloud {
+    left: 50%;
+    top: 70%;
+}
+
+
+.shift_color {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: var(--parent-background-color);
+    overflow: var(--parent-overflow);
+    border-radius: var(--parent-border-radius);
+    box-shadow: var(--parent-box-shadow);
+    /* position: relative; */
+}
+
+.cloud_2 {
+    height: var(--cloud-height);
+    /* control the size */
+    aspect-ratio: 1.8;
+    --g: radial-gradient(50% 50%, #000 98%, #0000) no-repeat;
+    mask: var(--g) 100% 100%/30% 60%, var(--g) 70% 0/50% 100%, var(--g) 0 100%/36% 68%, var(--g) 27% 18%/26% 40%, linear-gradient(#000 0 0) bottom/67% 58% no-repeat;
+    background: var(--cloud-background-color);
+    box-shadow: var(--cloud-box-shadow);
+    position: absolute;
+    left: 70%;
+    top: 55%;
+    transform: translate(0%, -50%);
+    transition: var(--cloud-transition);
+}
+
+
+.cloud_2.move_cloud {
+    left: 50%;
+    top: 70%;
+}
+
+
+.shift_color .sun {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--sun-parent-background-image);
+    transform: translateX(-100%);
+    cursor: pointer;
+    transition: var(--sun-parent-transition);
+    border-radius: 0px;
+}
+
+
+
+.shift_color .sun .sun_shape {
+    height: var(--sun-height);
+    aspect-ratio: 1;
+    border-radius: 100px;
+    background-image: var(--sun-background-image);
+    box-shadow: var(--sun-box-shadow);
+    position: absolute;
+}
+
+.shift_color .sun.active {
+    transform: translateX(0);
+}
+
+
+.shift_color .moon.active {
+    transform: translateX(0);
+}
+
+
+.shift_color .moon {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    cursor: pointer;
+    background: var(--moon-parent-background-color);
+    transition: var(--moon-parent-transition);
+    border-radius: 0px;
+
+}
+
+
+.shift_color .moon .moon_shape {
+    height: var(--moon-height);
+    aspect-ratio: 1;
+    border-radius: 100px;
+    background-image: var(--moon-background-image);
+    box-shadow: var(--moon-box-shadow);
+}
+
+/*-- ========== COLOR-SHIFT END ==================== --*/
+
+
+
+
+
+
+
+/*-- ========== COUNTING SECTION ==================== --*/
+
+#counting_purchase {
+    /* height: 60vh; */
+}
+
+
+#counting_purchase .parent_row {
+    justify-content: space-between;
+}
+
+
+
+#counting_purchase .parent_row .p_img {
+    width: 40%;
+}
+
+
+
+#counting_purchase .parent_row .p_img img {
+    width: 100%;
+    display: flex;
+}
+
+
+
+#counting_purchase .parent_row .c_contains {
+    width: 55%;
+    padding: 30px 30px 0 0;
+}
+
+
+#counting_purchase .c_contains h4 {
+    font-family: "Public Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 133%;
+    color: var(--count-purchase-h4-color);
+
+    transition: var(--default-transition);
+}
+
+
+
+#counting_purchase .c_contains p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--count-purchase-p-color);
+
+    transition: var(--default-transition);
+}
+
+
+
+#counting_purchase .c_contains .rating_row {
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #cecece96;
+}
+
+
+
+
+#counting_purchase .c_contains .rating_row p:last-of-type {
+    font-size: 12px;
+    color: var(--count-purchase-p_in-stock-color);
+    padding: 4px 12px;
+    background: var(--count-purchase-p_in-stock-background);
+    border-radius: 20px;
+    outline: 1px solid var(--count-purchase-p_in-stock-outline);
+}
+
+
+
+#counting_purchase .c_contains .price_row {
+    align-items: center;
+    padding: 30px 0 10px;
+    border-bottom: 1px solid #cecece96;
+}
+
+
+
+#counting_purchase .c_contains .price_row h4 {
+    font-size: 28px;
+    color: var(--count-price_color);
+    margin-left: 30px;
+}
+
+
+
+
+
+#counting_purchase .c_contains .quantity_row {
+    align-items: center;
+    padding: 15px 0 10px;
+    border-bottom: 1px solid #cecece96;
+}
+
+
+
+#counting_purchase .c_contains .quantity_row .count {
+    margin-left: 55px;
+    align-items: center;
+}
+
+
+
+
+#counting_purchase .c_contains .quantity_row .count .quantity_count {
+
+    align-items: center;
+}
+
+
+
+#counting_purchase .c_contains .quantity_row .count p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300px;
+    color: #aca8a9dc;
+    margin-left: 25px;
+}
+
+#counting_purchase .c_contains .quantity_row .decrement {
+    display: inline-flex;
+    align-items: center;
+    background: #f5f1f37d;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    line-height: 0;
+    color: #00000091;
+    cursor: not-allowed;
+
+    transition: var(--default-transition);
+}
+
+
+
+#counting_purchase .c_contains .quantity_row h5 {
+    font-family: "Public Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--count-quantity-color);
+    margin: 0 20px;
+
+    transition: var(--default-transition);
+}
+
+
+
+#counting_purchase .c_contains .quantity_row .increment {
+    display: inline-flex;
+    align-items: center;
+    background: #f0edefb6;
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    line-height: 0;
+    color: #000000ef;
+    cursor: pointer;
+
+    transition: var(--default-transition);
+}
+
+
+#counting_purchase .c_contains .t_price_row {
+    align-items: center;
+    padding: 15px 0 10px;
+    border-bottom: 1px solid #cecece96;
+}
+
+
+
+#counting_purchase .c_contains .t_price_row h4 {
+    font-size: 28px;
+    color: var(--count-price_color);
+    margin-left: 30px;
+}
+
+
+#counting_purchase .c_contains .order_now {
+    padding-top: 40px;
+}
+
+
+#counting_purchase .c_contains .order_now a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--count-order-button_background);
+    color: var(--count-order-button_color);
+    outline: 1px solid var(--count-order-button_outline);
+}
+
+#counting_purchase .c_contains .order_now a:hover {
+    transition: background 0.3s ease-in-out, outline-color 0.6s ease-in-out;
+    background: transparent;
+    outline: 1px solid var(--count-order-button_background);
+    color: var(--count-order-button_background);
+}
+
+
+
+
+/*-- ========== QR SECTION ==================== --*/
+
+
+
+
+#qr_sec {
+    height: 82.7vh;
+}
+
+
+#qr_sec .form_row {
+    background: var(--qrsec-form-background);
+    padding: 60px 0;
+    border-radius: 15px;
+    overflow-y: hidden;
+}
+
+
+
+#qr_sec .user_input {
+    justify-content: center;
+}
+
+#qr_sec .user_input input {
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    width: 21%;
+    border-radius: 20px 0 0 20px;
+    background: var(--qrsec-input-background);
+    transition: var(--default-transition);
+}
+
+
+#qr_sec .user_input button {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: var(--qrsec-button-background);
+    color: var(--qrsec-button-color);
+    border-radius: 0 15px 15px 0;
+    /* box-shadow: 0 3px 3px 2px #009DB6; */
+    font-size: 13px;
+    font-weight: medium;
+    font-family: "Lato", sans-serif;
+    transition: var(--default-transition);
+}
+
+#qr_sec .user_input button:hover {
+    transition: 0.2s ease-in-out;
+    border: none;
+    outline: none;
+    background: var(--qrsec-button_hover-background);
+    color: var(--qrsec-button_hover-color);
+    transition: var(--default-transition);
+}
+
+
+
+#qr_sec .image {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+#qr_sec .image .img_background {
+    position: sticky;
+    width: 15%;
+    /* z-index: 1; */
+}
+
+
+#qr_sec .image img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: var(--qrsec-image_background);
+    transition: var(--qr-image-transition);
+    /* z-index: 2; */
+}
+
+#qr_sec .image .shadow {
+    height: 209%;
+    width: 144%;
+    background: var(--qrsec-image_shadow-background);
+    position: absolute;
+    left: 55%;
+    top: 18.2%;
+    transform: rotate(134deg);
+    transition: var(--qr-image-refelctor-transition);
+    z-index: -1;
+}
+
+#qr_sec .qr_input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a8a3a4;
+}
