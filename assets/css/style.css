@@ -64,7 +64,7 @@ body {
     --parent-box-position-top: 3%;
     --parent-box-position: fixed;
 
-    --parent-border-radius: 10px;
+    --parent-border-radius: 15px;
     --parent-background-color: #e8e8e834;
     --parent-overflow: hidden;
     --parent-box-shadow: 10px 10px 40px 0.1px #b9b9b994;
